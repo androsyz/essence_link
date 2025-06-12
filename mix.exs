@@ -48,6 +48,7 @@ defmodule EssenceLink.MixProject do
       {:absinthe, "~> 1.6"},
       {:absinthe_plug, "~> 1.5"},
       {:dotenvy, "~> 0.8.0"},
+      {:bcrypt_elixir, "~> 3.0"},
     ]
   end
 

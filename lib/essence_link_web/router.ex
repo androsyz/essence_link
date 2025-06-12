@@ -5,6 +5,8 @@ defmodule EssenceLinkWeb.Router do
     plug :accepts, ["json"]
   end
 
+  # TODO : add jwt
+
   scope "/" do
     pipe_through :api
 

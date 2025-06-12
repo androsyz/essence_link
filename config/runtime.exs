@@ -25,10 +25,7 @@ if config_env() == :dev do
   Dotenvy.source!(Path.expand("../.env", __DIR__))
 
   config :essence_link, EssenceLink.Repo,
-    username: env!("DB_USERNAME"),
-    password: env!("DB_PASSWORD"),
-    hostname: env!("DB_HOST"),
-    database: env!("DB_NAME"),
+    url: env!("DATABASE_URL"),
     stacktrace: true,
     show_sensitive_data_on_connection_error: true,
     pool_size: 10
