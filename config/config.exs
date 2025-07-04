@@ -31,6 +31,9 @@ config :essence_link, EssenceLinkWeb.Endpoint,
 # at the `config/runtime.exs`.
 config :essence_link, EssenceLink.Mailer, adapter: Swoosh.Adapters.Local
 
+# Configures the JWT secret
+config :essence_link, jwt_secret: System.get_env("JWT_SECRET")
+
 # Configures Elixir's Logger
 config :logger, :console,
   format: "$time $metadata[$level] $message\n",
